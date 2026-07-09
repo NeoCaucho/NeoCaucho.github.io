@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neo-Caucho | Mantención Sustentable de Canchas</title>
+    <title>Neo-Caucho | Productos y Mantención Sustentable</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,48 +12,81 @@
     <nav class="navbar">
         <div class="logo">NEO-<span>CAUCHO</span></div>
         <ul class="nav-links">
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#ventajas">Ventajas</a></li>
-            <li><a href="#contacto" class="btn-primary">Cotizar Mantención</a></li>
+            <li><a href="#productos">Tienda</a></li>
+            <li><a href="#servicios">Servicio Integral</a></li>
+            <li><a href="#contacto" class="btn-primary">Cotizar</a></li>
         </ul>
     </nav>
 
-    <!-- Sección Principal (Hero) -->
-    <header class="hero">
-        <div class="hero-content fade-in">
-            <h1>Caucho Reciclado de Alta Pureza para Canchas Deportivas</h1>
-            <p>Servicio integral de mantención y nivelación mecanizada para complejos deportivos. Reduce costos y cumple con la Ley REP.</p>
-            <a href="#contacto" class="btn-primary hero-btn">Agendar Diagnóstico</a>
-        </div>
+    <!-- Sección Principal (Tu Portada) -->
+    <header class="hero fade-in">
+        <!-- AQUÍ SE CARGA TU IMAGEN DE PORTADA -->
+        <img src="portada.jpg" alt="Portada Neo-Caucho" class="portada-img">
     </header>
 
-    <!-- Sección Servicios -->
-    <section id="servicios" class="services section">
-        <h2 class="fade-in">Nuestro Servicio Integral</h2>
+    <!-- Sección de Productos (Estilo E-commerce) -->
+    <section id="productos" class="products section">
+        <h2 class="fade-in">Nuestros Productos</h2>
         <div class="grid">
-            <div class="card fade-in">
-                <h3>Suministro de Caucho</h3>
-                <p>Provisión de caucho granulado 100% libre de acero y nylon. Formato a granel o sacos de 25kg.</p>
+            <!-- Producto 1 -->
+            <div class="product-card fade-in">
+                <div class="product-img-placeholder">📸 Foto Saco</div>
+                <h3>Saco Neo-Caucho (25 kg)</h3>
+                <p class="product-desc">Grano certificado libre de acero. Ideal para reparaciones puntuales de canchas.</p>
+                <p class="product-price">$8.000 <span>/ saco</span></p>
+                <button class="btn-outline">Agregar al Carrito</button>
             </div>
-            <div class="card fade-in">
-                <h3>Instalación Mecanizada</h3>
-                <p>Aplicación profesional en terreno con rodillo compactador. Cero esfuerzo para tu personal.</p>
+            <!-- Producto 2 -->
+            <div class="product-card fade-in">
+                <div class="product-img-placeholder">📸 Foto Big Bag</div>
+                <h3>Big Bag Neo-Caucho (1 Tonelada)</h3>
+                <p class="product-desc">Formato mayorista para complejos deportivos y constructoras.</p>
+                <p class="product-price">$320.000 <span>/ tonelada</span></p>
+                <button class="btn-outline">Agregar al Carrito</button>
             </div>
-            <div class="card fade-in">
-                <h3>Mantención Anual</h3>
-                <p>Relleno programado (1 a 3 kg por m²) para alargar la vida útil del pasto sintético.</p>
+            <!-- Producto 3 -->
+            <div class="product-card fade-in">
+                <div class="product-img-placeholder">📸 Foto Baldosa</div>
+                <h3>Baldosas de Caucho (50x50 cm)</h3>
+                <p class="product-desc">Piso amortiguante para plazas, gimnasios y zonas de seguridad.</p>
+                <p class="product-price">$12.000 <span>/ unidad</span></p>
+                <button class="btn-outline">Agregar al Carrito</button>
+            </div>
+            <!-- Producto 4 -->
+            <div class="product-card fade-in">
+                <div class="product-img-placeholder">📸 Foto Tope</div>
+                <h3>Topes de Estacionamiento</h3>
+                <p class="product-desc">Alta resistencia al impacto vehicular. 100% caucho reciclado Ley REP.</p>
+                <p class="product-price">$15.000 <span>/ unidad</span></p>
+                <button class="btn-outline">Agregar al Carrito</button>
             </div>
         </div>
     </section>
 
-    <!-- Llamado a la Acción (Contacto) -->
+    <!-- Sección Servicios -->
+    <section id="servicios" class="services section bg-light">
+        <h2 class="fade-in">Servicio de Mantención B2B</h2>
+        <div class="grid">
+            <div class="card fade-in">
+                <h3>Aplicación Mecanizada</h3>
+                <p>Nuestra cuadrilla instala el material con rodillos profesionales. Rápido y sin montículos.</p>
+            </div>
+            <div class="card fade-in">
+                <h3>Mantención Anual</h3>
+                <p>Alarga la vida útil de tu pasto sintético con nuestro plan programado para complejos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Cotización -->
     <section id="contacto" class="contact section fade-in">
-        <h2>¿Listo para renovar tu complejo?</h2>
-        <p>Asegura el stock para tu próxima mantención.</p>
+        <h2>Solicita una Cotización Mayorista</h2>
+        <p>¿Necesitas más de 8 toneladas para tu complejo deportivo?</p>
         <form class="contact-form">
-            <input type="text" placeholder="Nombre de tu Complejo Deportivo" required>
+            <input type="text" placeholder="Nombre o Empresa" required>
             <input type="email" placeholder="Correo Electrónico" required>
-            <button type="submit" class="btn-primary">Solicitar Presupuesto</button>
+            <textarea placeholder="Cuéntanos sobre tu proyecto (m² de la cancha, ubicación, etc.)" rows="4" required></textarea>
+            <button type="submit" class="btn-primary">Enviar Solicitud</button>
         </form>
     </section>
 
